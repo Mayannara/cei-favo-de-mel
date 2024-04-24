@@ -2,10 +2,11 @@ import React, { ChangeEvent, useState, FormEvent, useCallback } from 'react'
 
 import * as S from '.styles'
 
-import theme from '../../../../styles/theme'
+import theme from '../../styles/theme'
 import useDebouncedEffect from '../../../hooks/useDebouncedEffect'
 import inputMask, { MaskTypes } from '../../../utils/inputMasks'
 import { replaceInputValue } from '../../../utils/quoteHelper'
+import { EIcons } from '../Icons'
 
 export type TInput = {
   className?: string
